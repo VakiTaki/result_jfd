@@ -3,8 +3,7 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      App
-      test git
+      Git Test Branch OK
     </div>
   );
 }
