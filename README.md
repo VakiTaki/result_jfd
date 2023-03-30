@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+!!!!! Чтобы запустить проект:
+1. yarn install
+2. yarn start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
