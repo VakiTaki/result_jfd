@@ -5,8 +5,8 @@ import CounterList from "./components/counterList";
 function App() {
   return (
     <>
-      <Page />
-      {/* <CounterList /> */}
+      {/* <Page /> */}
+      <CounterList />
     </>
   );
 }
