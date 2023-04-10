@@ -5,7 +5,7 @@ const Counter = (props) => {
     return props.value === 0 ? "empty" : props.value;
   };
   const badgeCls = () => {
-    let cls = "badge m-2 ";
+    let cls = "badge m-2 fs-5 ";
     return props.value === 0 ? cls + "bg-warning" : cls + "bg-primary";
   };
 
@@ -27,23 +27,25 @@ const Counter = (props) => {
   //домашка конец
 
   return (
-    <tr>
+    <tr className="align-baseline">
       <td>
         <span>{props.title}</span>
       </td>
-      <td style={{ minWidth: "100px" }}>
+      <td style={{ minWidth: "150px" }} className="text-center ">
         <span className={badgeCls()}>{valueFormat()}</span>
       </td>
       <td>
         {" "}
         <button
-          className="btn btn-primary btn-sm m-2"
+          style={{ width: "30px" }}
+          className="btn btn-primary btn-sm fs-5 me-1"
           onClick={() => handlerChangeValue(1)}
         >
           +
         </button>
         <button
-          className="btn btn-primary btn-sm m-2"
+          style={{ width: "30px" }}
+          className="btn btn-primary btn-sm fs-5"
           onClick={() => handlerChangeValue(-1)}
         >
           -
@@ -52,7 +54,7 @@ const Counter = (props) => {
       <td>
         {" "}
         <button
-          className=" btn btn-danger m-2 btn-sm"
+          className=" btn btn-danger btn-sm fs-5"
           onClick={() => props.onDelete(props.id)}
         >
           Delete
